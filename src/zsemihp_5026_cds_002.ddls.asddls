@@ -4,8 +4,8 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'cds eğitim-2'
 define view zsemihp_5026_cds_002 as select from vbrp
-            inner join vbrk on vbrk.vbeln = vbrp.vbeln
-            inner join mara on mara.matnr = vbrp.matnr
+            inner join vbrk      on vbrk.vbeln = vbrp.vbeln
+            inner join mara      on mara.matnr = vbrp.matnr
             left outer join vbak on vbak.vbeln = vbrp.aubel
             left outer join kna1 on kna1.kunnr = vbak.kunnr
             left outer join makt on makt.matnr = mara.matnr
